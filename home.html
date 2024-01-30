@@ -1,74 +1,210 @@
+<!--Fair warning for any unfortunate soul other than me
+who will be reading this absolutely disgusting concoction
+of code, I comment a lot of nonsense with my own set of humor.-->
+
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en"> <!--Will this matter? Probably yes-->
 <head>
-    <meta charset="UTF-8">
+    <meta charset="UTF-8"> <!--Add more meta tags when you know their func better-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Remi maskulin | Portfolio</title>
+    <title>Remikuraa | Portfolio</title>
 </head>
 <body>
 
+    <!--Later when implementing 'truth' mode, everything that contains text for the 
+        user to read will be duplicated and given a 'truth' class. This will make me cry
+        scream vomit and die, but this is what I want and what I've planned to do since
+        I started web developement learning. And I am incredibly extra, let me indulge myself.-->
+
+
     <div class="stickystuff"> <!--As hinted by the name, this shit doesn't go with the scroll-->
         <header>
-            <div class="headerContent" id="siglogo"></div>
-            <div class="headerContent" id="inbetween"></div>
-            <div class="headerContent" id="menustuff"></div>
+            <div class="headerContent" id="siglogo">
+                <img src="steampunk_acessories/bronze_gear.png" id="leftIcon" alt="Right now just a gear"> <!--Replace later with personal logo-->
+            </div>
+            <div class="headerContent" id="inbetween">
+                <img src="steampunk_acessories/banner.png" id="headerBanner">
+            </div>
+            <div class="headerContent" id="menustuff">
+                <button id="MenuIcon">Menu</button>
+                <ul>
+                    <!--Not sure if I'm causing future me 
+                        a headache by not declaring them as buttons-->
+
+                    <li class="headerBTNs" id="headHOME">Home</li>
+                    <li class="headerBTNs" id="headABME">About me</li>
+                    <li class="headerBTNs" id="headCON">Contact</li>
+                    <li class="headerBTNs" id="headSOME">Social Media</li>
+                    <li class="headerBTNs" id="headPORF">Portfolio</li>
+                </ul>
+            </div>
         </header>
 
         <div class="settings">
             <div class="settingbuttons">
-                <!--Lang switcher, dark mode etc here-->
+                <ul> 
+                    <!--Once again, should I have just done buttons?!?-->
+                    <li class="additionsChildren" id="lightSet">LiDa mode</li>
+                    <li class="additionsChildren" id="langSet">Language</li>
+                    <li class="additionsChildren" id="truthSet">'honesty' mode</li> 
+                    <!--Am I seriously planning to rewrite everything? Yeah. Why not?-->
+                </ul>
             </div>
+            <button id="toggleSets"></button> <!--Will be an image that scrolls the settings above-->
         </div>
-    </div>
+    </div> <!--End of Sticky stuff. No other comment.-->
+
 
     <section class="home"> <!--section can contain bg img-->
         <div class="everythingInHome">
-            <!--Seperating into sides because making mobile view will get easier-->
+            <!--Seperating into sides because 
+                making mobile view will get easier-->
+
             <div class="screenLeftside">
                 <div class="LHomeIntr">
                     <div id="shortlyAbme">
-                        <!--Here goes my title and short descriptions. Will probably seperate into more divs-->
+                        <!--Here goes my title and short descriptions. 
+                            Will probably seperate into more divs. 
+                            I hate myself.-->
+                        <p class="HomesAbMe" id="homeTitle">Welcome, I am Remi!</p>
+                        <p class="HomesAbMe" id="homeDesc">
+                            Hello, I am a junior programmer and an ambitious artist. <br>
+                            I'm here to show off some of my achievements and give you <br>
+                            the chance to contact me, or follow me on social media! Every<br>
+                            piece of art or visual graphic is drawn by me! (except the text).<br>
+                            Click, scroll and explore my page as you please.<br><br></p>
+                        
+                        <p class="HomesAbMe" id="homeLittleText">
+                            (PS), I've hidden little easter eggs and fun stuff to play around with!
+                            <!--Stop lying, Remi.-->
+                        </p>
                     </div>
                 </div>
                 <div class="portfolioButton">
-                    <!--Here a button to see Portfolio-->
+                    <!--Here a button to see Portfolio.
+                        IS this project not a feat enough as it is?
+                        No, of course it isn't.-->
                 </div>
             </div>
 
+
             <div class="screenRightside"> <!--Good enough as it is, really-->
                 <div id="meJumping">
-                    <!--See  Canva if confused-->
+                    <img src="steampunk_acessories/mystery-man.png" alt="That's me but unsually happy"> <!--Placeholder image-->
                 </div>
-                <div id="hangingLamps">
-                    <!--figure rest later.-->
+                <div class="hangingLamps" id="lampContainer">
+                    <!--Lamps will be interactable, as I alledgedly promised
+                        in the left side of the screen. Later, tho.-->
+                    <div class="hangingLamps" id="upperLamp"></div>
+                    <div class="hangingLamps" id="middleLamp"></div>
+                    <div class="hangingLamps" id="bottomLamp"></div>
                 </div>
+            </div>
+
+            <div class="disclaimer">
+                <p id="disclaimertext">
+                    Disclaimer, all profane language used in 'truth' mode is 100% honest and I am not sorry <br>
+                    for seeming unprofessional. I am very capable of being appropriate and respectful, <br>
+                    but this is my portfolio, dipped deep in my personality :'D Have a nice day
+                </p>
             </div>
         </div>
     </section>
 
     <section class="aboutme">
         <div class="screenLeftside">
-            <!--Not my problem right now-->
+            <p class="abmeText" id="abmeTitle">Remikuraa - a.k.a Remi Maskulin!</p>
+            <p class="abmeText" id="abmeDesc">
+                Type more text about me here, education and hobbies and a fair warning
+                of my tiktok. Figure the introductions later and whatnot yadayada
+            </p>
         </div>
+
         <div class="screenRightside">
             <div class="skillContainer">
+                <!--Idea is that there is a vertical row of little icons with text
+                    that user can click on to open a more in depth explanation and 
+                    demonstration on the right side. These 'tabs' will be paired with their
+                    explanation by class ('Artskillz for example')-->
+
+                <!--Art tab-->
                 <div class="skillRows">
-                    <div class="artSkillz" id="artskillButton"></div> <!--Temporary example-->
-                    <!--Series of buttons that show vertically some of my expertise (see canva)-->
+                    <div class="artSkillz" id="artskillButton"></div>
+                    <!--Series of buttons that show horizontally 
+                        some of my expertise (see canva).
+                        Now bffr are you expert at anything?-->
                 </div>
                 <div class="skillsInDepth">
-                    <div class="artSkillz" id="artskillExpl"></div>
-                    <!--Each explanation paired with the buttons in class-->
+                    <div class="artSkillz" id="artskillExpl">
+                        <ul class="artsubclass">
+                            <li class="artSubs" id="allArt"></li>
+                            <li class="artSubs" id="traditionalArt"></li>
+                            <li class="artSubs" id="digitalArt"></li>
+                            <li class="artSubs" id="audibleArt"></li>
+                            <li class="artSubs" id="exraArt"></li>
+                        </ul>
+                    </div>
+                    <!--How the fuck will I fit all that? idk, not my problem now.-->
                 </div>
+
+
+                <!--programmers tab-->
+                <div class="skillRows">
+                    <div class="programming" id="progButton">
+                        <!--Nothing too special will be here-->
+                    </div>
+                </div>
+                <div class="skillsInDepth">
+                    <div class="programming" id="progSkillExpl">
+                        <ul class="progsubclass">
+                            <li class="progSubs" id="allprog"></li>
+                            <li class="progSubs" id="webDev"></li>
+                            <li class="progSubs" id="gamedev"></li>
+                            <li class="progSubs" id="theBoringStuff"></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="skillRows">
+                    <div class="writing" id="writButton">
+                        <!--Nothing too special will be here-->
+                    </div>
+                </div>
+                <div class="skillsInDepth">
+                    <div class="writing" id="writSkillExpl">
+                        <ul>
+                            <li id="allwriting"></li>
+                            <li id="charCreat"></li>
+                            <li id="worldBuild"></li>
+                            <li id="psychAnalyzes"></li>
+                            <li id="stratsAndLogic"></li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
     
     <section class="contact">
-
+        <!--just have a row of ways to contact me-->
+        <div id="gmail"></div>
+        <p>You can also message me from my social media <br>
+        profiles, but I am more likely to be reached from email & Discord! </p>
     </section>
+
     <section class="socialmedia">
-
+        <!--Hello tiktok-->
+        <div class="SomeContainer">
+            <div class="someBTNcontainers"></div> <!--Tiktok-->
+            <div class="someBTNcontainers"></div> <!--Instagram-->
+            <div class="someBTNcontainers"></div> <!--Twitter (fuck the X)-->
+            <div class="someBTNcontainers"></div> <!--Youtube-->
+            <div class="someBTNcontainers"></div> <!--Github-->
+            <div class="someBTNcontainers"></div> <!--Ao3 (Will I really be that brave?)-->
+        </div>
     </section>
+
+    <footer><p>All credit comes to me, and 'LilSimsie' on YT for being awesome background noise.</p></footer>
 </body>
 </html>
