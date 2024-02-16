@@ -5,8 +5,10 @@ of code, I comment a lot of nonsense with my own set of humor.-->
 <!DOCTYPE html>
 <html lang="en"> <!--Will this matter? Probably yes-->
 <head>
-    <meta charset="UTF-8"> <!--Add more meta tags when you know their func better-->
+    <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Remi M">
+    <meta name="keywords" content="Portfolio, showcase, hire, artist, programmer, developer">
     <title>Remikuraa | Portfolio</title>
 </head>
 <body>
@@ -23,19 +25,19 @@ of code, I comment a lot of nonsense with my own set of humor.-->
                 <img src="steampunk_acessories/bronze_gear.png" id="leftIcon" alt="Right now just a gear"> <!--Replace later with personal logo-->
             </div>
             <div class="headerContent" id="inbetween">
-                <img src="steampunk_acessories/banner.png" id="headerBanner">
+                <img src="steampunk_acessories/banner.png" id="headerBanner"> <!--For bigger screens, dont stretch the image but put later an even longer banner. For now only bg color-->
             </div>
             <div class="headerContent" id="menustuff">
-                <button id="MenuIcon">Menu</button>
+                <button id="MenuIcon">Menu</button> <!--For mobile view, hide for large screens-->
                 <ul>
                     <!--Not sure if I'm causing future me 
                         a headache by not declaring them as buttons-->
 
-                    <li class="headerBTNs" id="headHOME">Home</li>
-                    <li class="headerBTNs" id="headABME">About me</li>
-                    <li class="headerBTNs" id="headCON">Contact</li>
-                    <li class="headerBTNs" id="headSOME">Social Media</li>
-                    <li class="headerBTNs" id="headPORF">Portfolio</li>
+                    <li class="headerBTNs" id="headHOME"><a href="#home">Home</a></li>
+                    <li class="headerBTNs" id="headABME"><a href="#aboutme">About me</a></li>
+                    <li class="headerBTNs" id="headCON"><a href="#contact">Contact me</a></li>
+                    <li class="headerBTNs" id="headSOME"><a href="#some">Social media</a></li>
+                    <li class="headerBTNs" id="headPORF"><a href="/portfolio.html">PORTFOLIO</a></li>
                 </ul>
             </div>
         </header>
@@ -43,19 +45,25 @@ of code, I comment a lot of nonsense with my own set of humor.-->
         <div class="settings">
             <div class="settingbuttons">
                 <ul> 
-                    <!--Once again, should I have just done buttons?!?-->
-                    <li class="additionsChildren" id="lightSet">LiDa mode</li>
-                    <li class="additionsChildren" id="langSet">Language</li>
-                    <li class="additionsChildren" id="truthSet">'honesty' mode</li> 
+                    <li class="additionsChildren" id="lightSet">Li / Da mode <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></li>
+                    <li class="additionsChildren" id="langSet">Language <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></li>
+                    <li class="additionsChildren" id="truthSet">'Honesty' mode <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></li> 
                     <!--Am I seriously planning to rewrite everything? Yeah. Why not?-->
                 </ul>
             </div>
-            <button id="toggleSets"></button> <!--Will be an image that scrolls the settings above-->
+            <button id="toggleSets"><img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></button> <!--Will be an image that scrolls the settings above the button-->
         </div>
     </div> <!--End of Sticky stuff. No other comment.-->
 
 
-    <section class="home"> <!--section can contain bg img-->
+
+        <!--HOME SECTION-->
+
+
+
+    <section class="home" id="home"> <!--section can contain bg img-->
+
+        <!--Additional div to help with styling-->
         <div class="everythingInHome">
             <!--Seperating into sides because 
                 making mobile view will get easier-->
@@ -71,7 +79,7 @@ of code, I comment a lot of nonsense with my own set of humor.-->
                             Hello, I am a junior programmer and an ambitious artist. <br>
                             I'm here to show off some of my achievements and give you <br>
                             the chance to contact me, or follow me on social media! Every<br>
-                            piece of art or visual graphic is drawn by me! (except the text).<br>
+                            piece of art or visual graphic is drawn by me!.<br>
                             Click, scroll and explore my page as you please.<br><br></p>
                         
                         <p class="HomesAbMe" id="homeLittleText">
@@ -93,7 +101,7 @@ of code, I comment a lot of nonsense with my own set of humor.-->
                     <img src="steampunk_acessories/mystery-man.png" alt="That's me but unsually happy"> <!--Placeholder image-->
                 </div>
                 <div class="hangingLamps" id="lampContainer">
-                    <!--Lamps will be interactable, as I alledgedly promised
+                    <!--Lamps will be interactable (turn on and off), as I alledgedly promised
                         in the left side of the screen. Later, tho.-->
                     <div class="hangingLamps" id="upperLamp"></div>
                     <div class="hangingLamps" id="middleLamp"></div>
@@ -101,6 +109,7 @@ of code, I comment a lot of nonsense with my own set of humor.-->
                 </div>
             </div>
 
+            <!--Make a little hidden button to click, have text reveal after click-->
             <div class="disclaimer">
                 <p id="disclaimertext">
                     Disclaimer, all profane language used in 'truth' mode is 100% honest and I am not sorry <br>
@@ -108,10 +117,15 @@ of code, I comment a lot of nonsense with my own set of humor.-->
                     but this is my portfolio, dipped deep in my personality :'D Have a nice day
                 </p>
             </div>
+
         </div>
     </section>
 
-    <section class="aboutme">
+
+    <!--ABOUT ME SECTION-->
+
+
+    <section class="aboutme" id="aboutme">
         <div class="screenLeftside">
             <p class="abmeText" id="abmeTitle">Remikuraa - a.k.a Remi Maskulin!</p>
             <p class="abmeText" id="abmeDesc">
@@ -186,14 +200,24 @@ of code, I comment a lot of nonsense with my own set of humor.-->
         </div>
     </section>
     
-    <section class="contact">
+
+
+    <!--CONTACT SECTION-->
+
+
+
+    <section class="contact" id="contact">
         <!--just have a row of ways to contact me-->
         <div id="gmail"></div>
         <p>You can also message me from my social media <br>
         profiles, but I am more likely to be reached from email & Discord! </p>
     </section>
 
-    <section class="socialmedia">
+
+    <!--SOME SECTION-->
+
+
+    <section class="socialmedia" id="some">
         <!--Hello tiktok-->
         <div class="SomeContainer">
             <div class="someBTNcontainers"></div> <!--Tiktok-->
@@ -201,10 +225,10 @@ of code, I comment a lot of nonsense with my own set of humor.-->
             <div class="someBTNcontainers"></div> <!--Twitter (fuck the X)-->
             <div class="someBTNcontainers"></div> <!--Youtube-->
             <div class="someBTNcontainers"></div> <!--Github-->
-            <div class="someBTNcontainers"></div> <!--Ao3 (Will I really be that brave?)-->
+            <div class="someBTNcontainers"></div> <!--Ao3 (Will I really be that brave? probably not but not my problem rn)-->
         </div>
     </section>
 
-    <footer><p>All credit comes to me, and 'LilSimsie' on YT for being awesome background noise.</p></footer>
+    <footer><p>All credit of creation comes to me. Credits to 'LilSimsie', 'Marliplier', and 'High Rollers DnD' on YT for being awesome background noise.</p></footer>
 </body>
 </html>
