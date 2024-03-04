@@ -9,6 +9,8 @@ of code, I comment a lot of nonsense with my own set of humor.-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Remi M">
     <meta name="keywords" content="Portfolio, showcase, hire, artist, programmer, developer">
+    <link rel="stylesheet" href="stylesheets/HomeStylesheet.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <title>Remikuraa | Portfolio</title>
 </head>
 <body>
@@ -29,10 +31,9 @@ of code, I comment a lot of nonsense with my own set of humor.-->
             </div>
             <div class="headerContent" id="menustuff">
                 <button id="MenuIcon">Menu</button> <!--For mobile view, hide for large screens-->
-                <ul>
+                <ul id="headerTop">
                     <!--Not sure if I'm causing future me 
                         a headache by not declaring them as buttons-->
-
                     <li class="headerBTNs" id="headHOME"><a href="#home">Home</a></li>
                     <li class="headerBTNs" id="headABME"><a href="#aboutme">About me</a></li>
                     <li class="headerBTNs" id="headCON"><a href="#contact">Contact me</a></li>
@@ -44,14 +45,25 @@ of code, I comment a lot of nonsense with my own set of humor.-->
 
         <div class="settings">
             <div class="settingbuttons">
-                <ul> 
-                    <li class="additionsChildren" id="lightSet">Li / Da mode <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></li>
-                    <li class="additionsChildren" id="langSet">Language <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></li>
-                    <li class="additionsChildren" id="truthSet">'Honesty' mode <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></li> 
+                <ul id="ulSetting"> 
+
+                    <li class="additionsChildren" id="lightSet">
+                        <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear">
+                        Li / Da mode
+                    </li>
+                    <li class="additionsChildren" id="langSet">
+                        <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear">
+                        Language 
+                    </li>
+                    <li class="additionsChildren" id="truthSet">
+                        <img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear">
+                        'Honesty' mode 
+                    </li> 
                     <!--Am I seriously planning to rewrite everything? Yeah. Why not?-->
+                    
                 </ul>
             </div>
-            <button id="toggleSets"><img src="steampunk_acessories/bronze_gear.png" alt="Right now just a gear"></button> <!--Will be an image that scrolls the settings above the button-->
+            <button id="toggleSets"><img src="/steampunk_acessories/bronze_gear.png" alt="settingsIcon"></button> <!--Will be an image that scrolls the settings above the button-->
         </div>
     </div> <!--End of Sticky stuff. No other comment.-->
 

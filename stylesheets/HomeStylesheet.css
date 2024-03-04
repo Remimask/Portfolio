@@ -1,0 +1,100 @@
+/*GLobal and commons here*/
+
+body {
+    background-color: #000;
+    color: antiquewhite;
+}
+
+/*STICKY STUFF BELOW*/
+
+.stickystuff {
+    position: sticky;
+    display: flex;
+    z-index: 1000;
+}
+
+
+header {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    align-items: center;
+}
+
+ul#headerTop {
+    list-style-type: none;
+    margin: 0;
+    padding: 5;
+    display: flex;
+    li.headerBTNs a {
+        margin-right: 20px;
+        text-decoration: none;
+        color: #b39c9c;
+    }
+}
+
+#leftIcon {
+    height: 50px;
+}
+
+img#headerBanner {
+    max-height: 75px;
+}
+
+
+/* Position the settings menu to the bottom right */
+.settings {
+    display: flex;
+    position: fixed;
+    bottom: 0px;
+    right: 5px;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 5px;
+    align-items: flex-end;
+}
+
+ul#ulSetting {
+    display: flex;
+    list-style-type: none;
+    flex-direction: column;
+}
+
+.additionsChildren {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+}
+.additionsChildren img, #toggleSets img {
+    height: 5vh;
+    width: 5vh;
+}
+
+button#toggleSets {
+    padding: 0;
+    background:rgba(206, 195, 161, 0.438);
+    border-radius: 360px;
+    border: none;
+}
+
+/*HOME PAGE BEGINS HERE*/
+
+.home, .aboutme, .contact {
+    padding-top: 200px;
+    display: flex;
+}
+
+.everythingInHome {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*FOOTER*/
+
+footer  {
+    display: flex;
+    justify-content: center;
+}
