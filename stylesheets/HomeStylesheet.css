@@ -90,6 +90,43 @@ button#toggleSets {
 .everythingInHome {
     display: flex;
     justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.hangingLamps {
+    display: flex;
+}
+.hangingLamps img {
+    height: 150px;
+}
+
+
+/*ABOUT ME SECTION*/
+
+#screenLeftsideABME {
+    background-color: #ece5da;
+    border-radius: 20px;
+    border-color:rgb(211, 188, 155);
+    border-width: 12px;
+    border-style: solid;
+}
+
+.aboutme {
+    position: relative;
+    display: flex;
+    background-image: url(/steampunk_acessories/factory.jpg);
+    background-repeat: no-repeat;
+}
+
+
+.abmeText {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-style: italic;
+    font-size: 25px;
+    color: #000;
+}
+#abmeTitle{
+    font-size: 50px;
 }
 
 /*FOOTER*/
