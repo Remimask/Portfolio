@@ -4,7 +4,7 @@ With HTML code having more comments of some stupid shit / thoughts of mine than 
 You witness the best represantion of myself through a format of code.
 <sup>Now please mind that all this is said witht a sick sense of humor.</sup>
 
-The home website is completely built by myself using no frameworks to ease the process, which includes all the art <sup>(as for now, absolutely no art is even there)<sup> is done by me. 
+The home website is completely built by myself using no frameworks to ease the process, which includes all the art <sup>(as for now, absolutely no art is even there)</sup> is done by me. 
 This acts as my first part of the entirety of what I consider 'My personal portfolio'. The secondary, which will then be more of a gallery than a tour of my skills, will be accessible through this website. Now in an optimal, happy world
 I would sometimes update this website with more stuff, fix old stuff or add more to flex with, but in all likelyhood this will sit as a token of my past once I am done with this. However, my goal is to polish it to perfection regardless.
 
